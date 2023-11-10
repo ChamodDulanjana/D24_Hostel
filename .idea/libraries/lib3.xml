@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/d24_Hostel/out/production/D24_Hotel/lk/ijse/gdse/d24_hotel/lib/lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/d24_Hostel/out/production/D24_Hotel/lk/ijse/gdse/d24_hotel/lib/jfoenix-8.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/d24_Hostel/out/production/D24_Hotel/lk/ijse/gdse/d24_hotel/lib/mysql-connector-java-8.0.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="838.0" prefWidth="1304.0" style="-fx-background-color: F4F4F6; -fx-border-color: #273c75;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.d24_hostel.controller.user.UserDetailUpdateFormController">
+   <children>
+      <ImageView fitHeight="838.0" fitWidth="1089.0" layoutX="108.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/image/user_bg.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="1.0" opacity="0.35" prefHeight="838.0" prefWidth="1304.0" style="-fx-background-color: F4F4F6; -fx-background-radius: 20px;">
+         <effect>
+            <BoxBlur />
+         </effect></AnchorPane>
+      <VBox layoutX="402.0" layoutY="190.0" opacity="0.56" prefHeight="468.0" prefWidth="501.0" style="-fx-border-color: #273c75; -fx-border-radius: 10px; -fx-background-color: #487eb0; -fx-background-radius: 10px;">
+         <effect>
+            <BoxBlur />
+         </effect>
+      </VBox>
+      <Pane layoutX="479.0" layoutY="375.0" prefHeight="49.0" prefWidth="346.0" style="-fx-background-color: ffffff; -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Password :" />
+            <JFXTextField fx:id="txtPassword" layoutX="111.0" layoutY="9.0" prefHeight="31.0" prefWidth="221.0" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="564.0" layoutY="561.0" onAction="#btnSaveOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #30336b; -fx-background-radius: 10px;" text="Update Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnEdit" buttonType="RAISED" layoutX="564.0" layoutY="561.0" onAction="#btnEditOnAction" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #9980FA; -fx-background-radius: 10px;" text="Edit Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="479.0" layoutY="276.0" prefHeight="49.0" prefWidth="346.0" style="-fx-background-color: ffffff; -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" text="Username :" />
+            <JFXTextField fx:id="txtUsername" layoutX="111.0" layoutY="10.0" prefHeight="31.0" prefWidth="221.0" />
+         </children>
+      </Pane>
+      <Text fill="#0c2461" layoutX="551.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Details">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+      <Line endX="-9.0" layoutX="521.0" layoutY="69.0" startX="-465.0" stroke="#bfbfbf" style="-fx-stroke: #535c68;" />
+      <Line endX="-9.0" layoutX="1249.0" layoutY="69.0" startX="-465.0" stroke="#bfbfbf" style="-fx-stroke: #535c68;" />
+      <JFXButton buttonType="RAISED" layoutX="1133.0" layoutY="763.0" onAction="#btnCloseOnAction" prefHeight="42.0" prefWidth="126.0" style="-fx-background-color: #c23616; -fx-background-radius: 10px;" text="Close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="741.0" prefWidth="1166.0" style="-fx-background-color: F4F4F6; -fx-border-color: #192a56;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.d24_hostel.controller.reservation.ReservationStudentDetailsFormController">
+   <children>
+      <Label layoutX="77.0" layoutY="123.0" text="Student ID : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="460.0" layoutY="123.0" text="Name : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="182.0" text="Contact : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="810.0" layoutY="123.0" text="Address : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="460.0" layoutY="182.0" text="Date of Birth : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="810.0" layoutY="182.0" text="Gender : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" alignment="CENTER" layoutX="564.0" layoutY="117.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="name" />
+      <Label layoutX="524.0" layoutY="41.0" text="Details " textFill="#273c75">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Line endX="847.0" layoutX="246.0" layoutY="62.0" startX="407.0" stroke="#909090" />
+      <TableView fx:id="tblDetails" layoutX="31.0" layoutY="265.0" prefHeight="367.0" prefWidth="1102.0" style="-fx-background-color: ffffff;" stylesheets="@../../value/table.Css">
+        <columns>
+          <TableColumn fx:id="clmReservationId" prefWidth="137.0" text="Reservation ID" />
+          <TableColumn fx:id="clmRoomId" prefWidth="137.0" text="Room ID" />
+            <TableColumn fx:id="clmRoomType" prefWidth="137.0" text="Room Type" />
+            <TableColumn fx:id="clmKeyMoney" prefWidth="137.0" text="Key Money" />
+            <TableColumn fx:id="clmKeyMoneyStatus" prefWidth="137.0" text="Key Money Status" />
+            <TableColumn fx:id="clmStatus" prefWidth="137.0" text="Status" />
+            <TableColumn fx:id="clmDate" prefWidth="137.0" text="Date" />
+            <TableColumn fx:id="clmOption" prefWidth="141.0" text="Option" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblId" alignment="CENTER" layoutX="177.0" layoutY="117.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="Student id" />
+      <Label fx:id="lblContact" alignment="CENTER" layoutX="177.0" layoutY="176.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="contact" />
+      <Label fx:id="lblDob" alignment="CENTER" layoutX="564.0" layoutY="176.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="dob" />
+      <Label fx:id="lblAddress" alignment="CENTER" layoutX="888.0" layoutY="117.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="address" />
+      <Label fx:id="lblGender" alignment="CENTER" layoutX="888.0" layoutY="176.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="gender" />
+      <JFXButton buttonType="RAISED" layoutX="1032.0" layoutY="663.0" onAction="#btnCloseOnAction" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: #e84118; -fx-background-radius: 10px;" text="Close" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="663.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Line endX="861.0" layoutX="-361.0" layoutY="62.0" startX="407.0" stroke="#909090" />
+   </children>
+</AnchorPane>
